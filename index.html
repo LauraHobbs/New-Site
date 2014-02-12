@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("Halong.JPG");
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      font-family: Verdana;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: Verdana;
+    }
+    body {
+      background-color: #808080;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Me.JPG">
+    <h1>Laura's Site</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="#">Other stuff</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>At the moment</h2>
+    <p>I am a marketing intern at a start up!</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Before that...</h2>
+    <p>I was traveling around asia</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>And a long time ago</h2>
+    <p>I was studying Philosophy at Cambridge</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
